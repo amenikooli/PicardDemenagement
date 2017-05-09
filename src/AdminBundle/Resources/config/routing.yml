@@ -1,0 +1,7 @@
+admin_homepage:
+    path:     /
+    defaults: { _controller: AdminBundle:Default:index }
+home_page:
+    path:     /index
+    defaults: { _controller: AdminBundle:Default:index }
+    

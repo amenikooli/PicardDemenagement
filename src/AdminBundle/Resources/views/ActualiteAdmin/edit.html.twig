@@ -1,0 +1,17 @@
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+ $("#{{ admin.uniqId }}_informationZone").css("display", "none");
+       
+                $("#{{ admin.uniqId }}_zone").on('change', function(){
+
+     if($("#{{ admin.uniqId }}_zone").val()=== "0"){ $("#{{ admin.uniqId }}_informationZone").css("display", "none");}
+     else{ $("#{{ admin.uniqId }}_informationZone").css("display", "block");}
+        });
+        }
+        );
+    </script>
+{% endblock %}

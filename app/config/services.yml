@@ -1,0 +1,29 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    admin.actualite:
+        class: AdminBundle\Admin\ActualiteAdmin
+        arguments: [~, AdminBundle\Entity\Actualite, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Actualite }
+        calls:
+            - [ setTemplate, [edit, AdminBundle:ActualiteAdmin:edit.html.twig]]
+            
+            
+    admin.partenaire:
+        class: AdminBundle\Admin\PartenaireAdmin
+        arguments: [~, AdminBundle\Entity\Partenaire, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Partenaire }
+    admin.confidant:
+        class: AdminBundle\Admin\ConfidantAdmin
+        arguments: [~, AdminBundle\Entity\Confidant, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Confidant }        
+               
+
+    
+    

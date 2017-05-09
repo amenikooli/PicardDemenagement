@@ -1,0 +1,118 @@
+{% extends "AdminBundle:Template:template.html.twig" %}
+{%block body %}
+
+
+                        <div class="content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="title-center"> Pour un <span>nouveau départ</span> avec nous<br />
+                                            Devis déménagement gratuit </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="panel  text-center">
+                                            <div class="panel-heading"> <span class="fa-5x"> <img src="{{ asset('image/1.png') }}" alt="Calcul Volume Déménagement"/> </span> </div>
+                                            <div class="panel-body">
+                                                <h4><span>Calcul </span>Volume Déménagement</h4>
+                                                <p>Aide pour calculer votre volume à déménager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="panel  text-center">
+                                            <div class="panel-heading"> <span class="fa-5x"> <img src="{{ asset('image/2.png') }}" alt="Estimer Coût Déménagement"/> </span> </div>
+                                            <div class="panel-body">
+                                                <h4><span>Estimer</span> Coût Déménagement</h4>
+                                                <p>Obtenez votre devis déménageur gratuit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="panel  text-center">
+                                            <div class="panel-heading"> <span class="fa-5x"> <img src="{{ asset('image/3.png') }}" alt="Faites Des Économies"/> </span> </div>
+                                            <div class="panel-body">
+                                                <h4>Faites Des <br />
+                                                    <span>Économies</span></h4>
+                                                <p>Jusqu’à 40% d’économie sur votre déménagement</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="panel text-center">
+                                            <div class="panel-heading"> <span class="fa-5x"> <img src="{{ asset('image/4.png') }}" alt="Déménageurs Professionnels"/> </span> </div>
+                                            <div class="panel-body">
+                                                <h4>Déménageurs <br />
+                                                    <span>Professionnels </span></h4>
+                                                <p> Des déménageurs  près de chez vous</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="dev-bloc"> <a href="#" class="btn-devis">Obtenez votre devis</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container bg_fond_gris">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="col-md-8">
+                                            <h2 class="title-actu">Devis déménagement France</h2>
+                                            <div class="list_actualite">
+                                                {%for actualite in actualites%}
+                                                <article>
+                                                    <div class="col-md-4"> <img src="{{ asset('images/documents/'~actualite.imageName~'') }}"   width="210" height="130" class="image_actu" /></div>
+                                                    <div class="col-md-8">
+                                                        <div class="dateactu"><i class="fa fa-link" aria-hidden="true"></i> Publié le {{actualite.dateCreation|date('Y-m-d')}}</div>
+                                                        <h3>{{actualite.title}}</h3>
+                                                        <p>{{actualite.text}} </p>
+                                                        <a class="more">Lire la suite</a> </div>
+                                                </article>
+                                               {% endfor %}
+                                              
+                                             
+                                                <div class="clear"></div>
+                                            </div>
+                                        </section>
+                                        <section class="col-md-4">
+                                            <h2 class="title-actu">Partenaires</h2>
+                                            <ul class="list_partenaires">
+                                                   {%for partenaire in partenaires%}
+                                                <li>
+                                                    <div class="col-md-4"><img src="{{ asset('images/documents/'~partenaire.imageName~'') }}" width="90" height="90" /></div>
+                                                    <div class="col-md-8">
+                                                        <h3>{{partenaire.title}}</h3>
+                                                        <p>{{partenaire.text}}</p>
+                                                        <a href="#" class="more">Voir les offres</a> </div>
+                                                </li>
+                                                  {% endfor %}
+                                                
+                                            </ul>
+                                            <div class="clear"></div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Our Customers -->
+                            <div class="container">
+                                <div class="row references">
+                                    <div class="col-md-12">
+                                        <h2 class="title-header"> Ils nous ont fait confiance.</h2>
+                                    </div>
+                                    {%for confidant in confidants%}
+                                    <div class="col-md-2 col-sm-4 col-xs-6"> <img class="img-responsive customer-img" src="{{ asset('images/documents/'~confidant.imageName~'') }}" alt="partenaire"> </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                            <!-- /.row --> 
+                        </div>
+                    
+                   
+{% endblock %}
+                   
+                   
+                

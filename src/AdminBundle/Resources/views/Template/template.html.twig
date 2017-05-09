@@ -1,0 +1,157 @@
+
+{%block header %}
+   
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Picard</title>
+                    <!-- Bootstrap Core CSS -->
+
+                    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+                    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+
+                    <script src="https://use.fontawesome.com/09206bfb05.js"></script>
+
+                    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                    <!--[if lt IE 9]>
+                            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                        <![endif]-->
+                    </head>
+
+                    <body>
+                        <div class="header">
+                            <div class="topheader">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="col-md-4 contact-header">
+                                                <li class="contact-button"> <a href="#">Contact </a> </li>
+                                                <li class="phone"> <a href="#"> 01 45 55 05 15 </a> </li>
+                                                <li class="social" >
+                                                    <ul>
+                                                        <li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+                                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation -->
+                            <nav class="navbar  " role="navigation">
+                                <div class="container"> 
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                        <a class="navbar-brand" href="index.html"><img src="{{ asset('image/logo.png') }}" alt="picard déménagement"/></a> </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li> <a href="#">DÉMÉNAGEMENT<br />
+                                                    PARTICULIER</a> </li>
+                                            <li> <a href="#">DÉMÉNAGEMENT <br />
+                                                    ENTREPRISE</a> </li>
+                                            <li> <a href="#">DÉMÉNAGEMENT<br />
+                                                    L'INTERNATIONAL</a> </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse --> 
+                                </div>
+                                <!-- /.container --> 
+                            </nav>
+                            <div class="clearfix"></div>
+                            <header id="myCarousel" class="carousel slide"> 
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div  style="background-image:url('image/slide.jpg'); height:464px"></div>
+                                        <div class="carousel-caption">
+                                            <h2><span>Pour un </span>déménagement<span> de</span> qualité</h2>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div style="background-image:url('image/slide.jpg'); height:464px"></div>
+                                        <div class="carousel-caption">
+                                            <h2><span>Pour un </span>déménagement<span> de</span> qualité</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Controls --> 
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </a>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="obtenez-devis">
+                                                <div class="bloc-devis">
+                                                    <div class="col-md-4">
+                                                        <input class="form-control form-devis" type="text" placeholder="Lieu de départ"/>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input  class="form-control form-devis"  type="text" placeholder="Lieu d'arrivée"/>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input type="submit" class="form-control btn-devis" value="Obtenez votre devis">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </header>
+
+                        {%endblock%}
+                        {%block body %}
+                        {%endblock%}
+                        {%block footer %}
+                            <footer>
+                                <div class="top-footer-first"> </div>
+
+                                <div class="bottom-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                    <li><a href="#">Plan du site </a></li>
+                                                    <li><a href="#">Mentions légales</a></li>
+                                                    <li><a href="#">Nous contacter</a></li>
+                                                    <li><a href="#">Affiliation</a></li>
+                                                    <li><a href="#">CGU </a></li>
+                                                    <li><a href="#">Parainage</a></li>
+                                                </ul>
+                                                <div class="logo-footer"><img src="{{ asset('image/logo-picard.png') }}" width="272" height="39" /></div>
+                                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                        {%endblock %}
+                        {% block javascript %}
+                             <!-- jQuery --> 
+                            <script src="{{ asset('js/jquery.js') }}"></script> 
+
+                            <!-- Bootstrap Core JavaScript --> 
+                            <script src="{{ asset('js/bootstrap.min.js') }}"></script> 
+                            <!-- Script to Activate the Carousel --> 
+                            <script>
+                                $('.carousel').carousel({
+                                    interval: 5000 //changes the speed
+                                })
+                            </script>
+                            
+                        {%endblock %}

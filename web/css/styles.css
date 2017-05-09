@@ -1,0 +1,559 @@
+@charset "utf-8";
+* {
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+body {
+font-family: "Proxima Nova Reg";
+font-size: 13px
+}
+@font-face {
+font-family: "Proxima Nova Reg";
+src: url("../fonts/ProximaNova-Reg.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Reg";
+src: url("../fonts/ProximaNova-Reg.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Sb";
+src: url("../fonts/ProximaNova-Sbold.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Sb";
+src: url("../fonts/ProximaNova-Sbold.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Bold";
+src: url("../fonts/ProximaNova-Bold.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Bold";
+src: url("../fonts/ProximaNova-Bold.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Lt";
+src: url("../fonts/ProximaNova-Light.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Proxima Nova Lt";
+src: url("../fonts/ProximaNova-Light.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 700";
+src: url("../fonts/Museo700-Regular.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 700";
+src: url("../fonts/Museo700-Regular.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 500";
+src: url("../fonts/Museo500-Regular.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 500";
+src: url("../fonts/Museo500-Regular.eot") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 300";
+src: url("../fonts/Museo300-Regular.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+font-family: "Museo 300";
+src: url("../fonts/Museo300-Regular.eot") /* TTF file for CSS3 browsers */
+}
+.topheader {
+background: #fbf9f6;
+border-bottom: 1px solid #e2e2e2;
+height: 40px;
+}
+ul {
+list-style: none;
+}
+.contact-header {
+float: right;
+}
+.contact-header li {
+float: left;
+}
+.contact-button {
+padding: 10px 14px;
+border-left: 1px solid #e2e2e2;
+}
+.contact-button a {
+color: #979ba4;
+}
+.phone {
+background: #005ea8;
+padding: 10px 14px;
+}
+.phone a {
+color: #fff;
+}
+li.social {
+text-align: center;
+}
+li.social ul {
+margin-top: 5px;
+margin-left: 4px;
+}
+li.social ul li {
+margin: 2px
+}
+li.social ul li a {
+background: #005ea8;
+border-radius: 50%;
+color: #fff;
+padding: 5px;
+height: 25px;
+width: 25px;
+display: block;
+}
+.navbar-nav>li {
+border-left: 1px solid #e2e2e2;
+}
+.navbar-nav>li>a {
+font-size: 12px;
+text-align: center;
+font-family: "Proxima Nova Sb"; color:#232323;
+}
+.navbar .container {
+border-right: 1px solid #e2e2e2;
+}
+.navbar-brand img {
+max-width: 100%;
+}
+/* Home Page Carousel */
+
+header.carousel {
+height: 50%;
+min-height: 300px;
+
+    height: 50%;
+    min-height: 300px;
+    padding-top: 5px;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db3a8c+0,145ea7+100 */
+background:  url(../images/bg-slider.jpg) no-repeat center top; 
+}
+header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+height: 100%;
+}
+.carousel-indicators {
+bottom: 20px;
+display: none;
+}
+.carousel-control.right {
+background: none;
+}
+.carousel-control.left {
+background: none;
+}
+header.carousel .fill {
+width: 100%;
+height: 100%;
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat
+}
+.carousel-caption h2 {
+font-size: 54px;
+font-family: "Museo 700";
+text-align: center;
+}
+.carousel-caption h2 span {
+font-family: "Museo 300";
+}
+.obtenez-devis {
+background-color: #005ea8;
+height: 120px;
+margin-top: -65px;
+}
+.form-devis {
+margin-left: 10px;
+}
+.bloc-devis {
+padding-top: 40px
+}
+.form-control {
+height: 40px;
+}
+.title-center {
+font-size: 30px;
+font-family: "Museo 700";
+text-align: center;
+color: #005ea8;
+padding: 40px 0px;
+line-height: 34px
+}
+.title-center span {
+color: #db3a8c;
+}
+.panel-body h4 {
+font-family: "Museo 700";
+font-size: 22px;
+color: #005ea8;
+}
+.panel-body h4 span {
+color: #db3a8c;
+}
+.panel-body p {
+color: #000;
+font-size: 16px;
+font-family: "Proxima Nova lT";
+}
+.title-header {
+font-family: "Museo 700";
+font-size: 30px;
+color: #005ea8;
+}
+.top-footer-first {
+background: #faf9f5 url(../images/footer.png) no-repeat center bottom;
+height: 146px;
+}
+.top-footer-second {
+background-color: #2982c6;
+height: 125px;
+}
+.bottom-footer {
+background-color: #1d60a6;
+min-height: 230px;
+text-align: center;
+color: #7db3dd;
+}
+.bottom-footer p {
+font-size: 12px;
+font-family: "Proxima Nova Lt";
+}
+.bottom-footer ul {
+font-size: 14px;
+font-family: "Proxima Nova Lt";
+display: block;
+max-width: 700px;
+margin: 25px auto 35px;
+height: 22px;
+}
+.bottom-footer ul li {
+height: 22px;
+line-height: 22px;
+padding: 0px 25px;
+border-right: 1px solid #2982c6;
+float: left
+}
+.bottom-footer ul li:last-child {
+border-right: none;
+padding-right: 0px;
+}
+.bottom-footer ul li a {
+color: #7db3dd;
+}
+.bottom-footer ul li a:hover {
+color: #2982c6;
+}
+.logo-footer {
+padding: 0px;
+height: 30px;
+margin-bottom: 20px
+}
+.nous-suivez {
+font-size: 24px;
+color: #fff;
+font-family: "Proxima Nova Rg";
+}
+li.social-footer {
+text-align: center;
+margin-top: -20px;
+}
+li.social-footer ul li {
+margin: 5px;
+float: left;
+}
+li.social-footer ul li a {
+background: #fff;
+border-radius: 50%;
+color: #005ea8;
+padding: 5px;
+height: 35px;
+width: 35px;
+display: block;
+font-size: 20px;
+}
+.newsletter_block {
+padding-top: 45px;
+}
+.newsletter-button {
+color: #fff;
+background-color: #db3a8c;
+border: 1px solid #e675af;
+float: left;
+width: 50px;
+height: 40px;
+border-radius: 3px;
+font-size: 16px;
+font-family: "Proxima Nova Rg";
+text-align: center;
+}
+input.btn-devis {
+color: #fff;
+background-color: #db3a8c;
+border: 1px solid #e675af;
+float: left;
+width: 285px;
+height: 40px;
+border-radius: 3px;
+font-size: 16px;
+text-align: center;
+padding-top: 0px;
+font-style: italic;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+line-height: 40px;
+padding: 0;
+font-weight: 600;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+a.btn-devis {
+
+    color: #fff;
+    background-color: #db3a8c;
+    border: 1px solid #e675af;
+    float: none;
+    width: 285px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 0px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    line-height: 40px;
+    padding: 0;
+    font-weight: 600;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+.title-actu {
+font-size: 30px;
+font-family: "Museo 700";
+color: #005ea8;
+padding-bottom: 30px
+}
+.img-actu {
+}
+.text-actu {
+width: 680px;
+height: 130;
+padding-top: 10px;
+}
+.dev-bloc {
+    padding: 50px 0px;
+    text-align: center;
+    height: 140px;
+}
+/*AMENI */
+	
+
+.dateActualite {
+font-size: 12px;
+font-family: "ProximaNova Light";
+color: #979ba4;
+}
+.imageDate {
+float: left;
+}
+.morelink {
+color: #db3a8c;
+font-family: "ProximaNova SemiBold";
+}
+.bloc-devis .form-control.form-devis {
+background: #fff url(../images/localisation-icon.png) no-repeat 97% center;
+}
+.carousel-caption {
+bottom: 180px;
+}
+.panel {
+margin-bottom: 20px;
+background-color: #fff;
+border: none;
+border-radius: 4px;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.bg_fond_gris {
+background: #fbfaf8;
+position: relative;
+padding: 40px 0px;
+border-top: #e2e2e2 1px solid
+}
+@media (min-width: 1024px) {.bg_fond_gris:before {
+background: #fbfaf8;
+content: " ";
+display: block;
+height: 100%;
+left: -1000px;
+position: absolute;
+top: -1px;
+width: 2391px;
+z-index: -1;
+border-top: #e2e2e2 1px solid
+}}
+.list_actualite {
+padding: 20px;
+background: #fff;
+border: 1px solid #f2f2f2;
+font-family: "Proxima Nova Lt";
+}
+.list_actualite article {
+list-style: none;
+margin-bottom: 20px;
+display: block;
+min-height: 150px
+}
+.list_actualite .dateactu {
+list-style: none;
+color: #979ba4;
+font-size: 12px;
+}
+.list_actualite h3 {
+font-size: 18px;
+color: #005ea8;
+font-family: "Proxima Nova Sb";
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.list_actualite p {
+font-size: 14px;
+color: #454545;
+font-family: "Proxima Nova Lt";
+}
+.list_actualite a.more {
+font-size: 12px;
+color: #db3a8c;
+font-family: "Proxima Nova Sb";
+text-decoration: underline
+}
+.clear {
+clear: both
+}
+.list_partenaires {
+list-style: none;
+padding: 20px;
+background: #fff;
+border: 1px solid #f2f2f2;
+font-family: "Proxima Nova Lt";
+color: #454545;
+display: block
+}
+.list_partenaires li {
+min-height: 115px;
+margin-bottom: 20px
+}
+.list_partenaires img {
+width: 90px;
+height: 90px;
+float: left;
+margin-right: 10px
+}
+.list_partenaires h3 {
+  float: left;    font-family: "Proxima Nova Sb";    color: #454545;    font-size: 14px;    margin-top: 0px;    min-width: 100%;
+}
+.list_partenaires p {
+  float: left;    font-family: "Proxima Nova Lt";    color: #454545;    font-size: 14px;    margin: 0px;    min-width: 100%;
+}
+.list_partenaires a.more {
+float: left;
+font-family: "Proxima Nova Sb";
+color: #454545;
+font-size: 12px;
+text-decoration: underline
+}
+/******************************/
+
+
+.references {
+text-align: center!important;
+padding: 30px 0px
+}
+/**************/
+
+.newsletter_subscribe {
+}
+.newsletter_subscribe .form-control.email {
+max-width: 285px;
+float: left;
+margin-right: 10px;
+}
+.newsletter_subscribe .form-control.ok {
+max-width: 50px;
+color: #fff;
+background-color: #db3a8c;
+border: 1px solid #e675af;
+float: left;
+border-radius: 3px;
+font-size: 16px;
+text-align: center;
+padding-top: 0px;
+font-style: italic;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+padding: 0;
+font-weight: 600;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.nous-suivre {
+font-family: "Proxima Nova Bold";
+font-size: 24px; color:#fff
+}
+
+/****************************************************/
+@media (max-width: 767px) {
+	body { max-width:767px; margin:0 auto;}
+.contact-button {
+padding: 10px 7px;
+}
+.navbar-brand img {
+max-width: 80%;
+}
+.navbar-brand {
+width: 80%;
+height: auto;
+}
+.navbar-toggle {
+background-color: #005ea8;
+}
+.navbar-toggle .icon-bar {
+background: #ccc;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+background: #fff;
+}
+header.carousel .carousel {
+height: 70%;
+}
+.list_partenaires li {
+min-height: 206px;
+margin-bottom: 20px;
+}
+.bg_fond_gris:before {
+display:none;
+
+}
+
+
+.obtenez-devis {
+    background-color: #005ea8;
+    height: 175px;
+    margin-top: -100px;
+}
+}
+@media (max-width: 480px) {
+	body { max-width:480px; margin:0 auto;}.bg_fond_gris:before {
+display:none;
+
+}
+}

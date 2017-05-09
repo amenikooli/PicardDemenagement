@@ -1,0 +1,97 @@
+<?php
+
+namespace AdminBundle\Entity;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of Zone
+ *
+ * @author kooli
+ */
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="zone")
+ */
+class Zone
+{
+
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="array")
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $information;
+    /**
+     * @ORM\OneToMany(targetEntity="Actualite", mappedBy="zone")
+     */
+    private $actualites;
+    public function __construct()
+    {
+        $this->name=new ArrayCollection("Paris","Marseille","Lyon","Toulouse","Nice","Nantes","Strasbourg","Montpellier","Bordeaux","Lille","Rennes","Le Havre","Reims","Saint-Étienne","Toulon",
+"Grenoble",	
+"Angers",
+"Dijon",	
+"Brest",	
+"Le MansSarthe",
+"Clermont-Ferrand",	
+"Amiens",	
+"Aix-en-Provence",	
+"Limoges",
+"Nîmes",	
+"Tours",	
+"Saint-Denis",	
+"Villeurbanne",	
+"Metz",
+"Besançon",	
+"Caen",	
+"Orléans",	
+"Mulhouse",	
+"Rouen",	
+"Boulogne-Billancourt",	
+"Perpignan",	
+"Nancy",
+"Roubaix",	
+"Fort-de-France",
+"Argenteuil",	
+"Tourcoing",	
+"Montreuil",	
+"Saint-Paul",	
+"Avignon",	
+"Saint-Denis",	
+"Versailles",	
+"Nanterre",	
+"Poitiers",	
+"Créteil",		
+"Aulnay-sous-Bois",	
+"Vitry-sur-Seine",
+"Pau",	
+"Calais",
+"Colombes",	
+"La Rochelle",	
+"Asnières-sur-Seine"	
+);
+       
+    }
+   
+
+
+ 
+}
